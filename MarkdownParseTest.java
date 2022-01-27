@@ -7,3 +7,9 @@ public class MarkdownParseTest {
         assertEquals(2, 1 + 1);
     }
 }
+
+// JUNIT copypaste
+
+// javac -cp ".;C:\JUNIT\junit-4.13.2.jar;C:\JUNIT\hamcrest-core-1.3.jar" ___________.java
+
+// java -cp ".;C:\JUNIT\junit-4.13.2.jar;C:\JUNIT\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ______________
