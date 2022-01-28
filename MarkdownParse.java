@@ -17,9 +17,11 @@ public class MarkdownParse {
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
             int openParen = markdown.indexOf("(", nextCloseBracket);
             int closeParen = markdown.indexOf(")", openParen);
+            String link = markdown.substring(openParen, closeParen);
 
             if ( (nextCloseBracket == openParen - 1) && (nextOpenBracket == 0 
             || markdown.charAt(nextOpenBracket - 1) != '!') ) {
+                if (!link.contains(" "))
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
             }
             
